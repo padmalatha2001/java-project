@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+           
+       <!--  <context:annotation-config/> -->
+        <context:component-scan base-package="springcore.di_setters"></context:component-scan>
+        
+  <!--  <bean id="car" class="springcore.di_setters.Car" scope="prototype" autowire="byType" 
+   init-method="init" destroy-method="destroy">
+   <property name="id" value="100"></property>
+   <property name="color" value="black"></property>
+   <property name="engine" ref="engine"></property>
+   <property name="brands">
+       <list>
+             <value>Tata</value>
+             <value>Volkswagen</value>
+             <value>BMW</value>
+             <value>Audi</value>
+             <value>Ford</value>
+       </list>
+   </property>
+   <property name="quotes">
+           <map>
+               <entry key="1" value="Cheers to new Beginings"></entry>
+                <entry key="2" value="Nothing is impossible"></entry>
+           </map>
+   </property>
+   </bean>
+   <bean id="engine1" class="springcore.di_setters.Engine" >
+    <property name="id" value="110"></property>
+     <property name="name" value="tesla-engine"></property>
+   </bean>
+   
+   <bean id="engine" class="springcore.di_setters.Engine" >
+    <property name="id" value="100"></property>
+     <property name="name" value="engine"></property>
+   </bean>
+     -->
+   </beans>
+   <!--  REFER :: https://www.java4coding.com/contents/spring/spring-property-tag -->
